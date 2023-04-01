@@ -12,11 +12,13 @@
 }
 
 :root {
-	--color-bg-from: #2a5298;
+	--color-bg-from: #244fc0;
 	--color-bg-to: #1e3c72;
-	--color-primary: #4db5ff;
+	--color-primary: #6cbbf3;
+	
 	--color-primary-variant: rgba(77, 181, 255, 0.4);
 	--color-white: #fff;
+	--color-black: #000;
 	--color-greylight: rgba(255, 255, 255, 0.6);
 	
 	--transition: all 0.3 ease;
@@ -62,7 +64,8 @@ h1 {
 }
 
 section {
-	margin-top: 8rem;
+	padding-bottom: 8rem;
+	min-height: 100vh;
 }
 
 section > h2 {
@@ -81,12 +84,14 @@ section > h5 {
 }
 
 a {
+	display: inline-block;
 	color: var(--color-primary);
 	transition: var(--transition);
 }
 
-a:hover {
-	color: var(--color-white);
+a > svg:hover,
+a > svg:focus-visible{
+	fill: var(--color-white);
 }
 
 .btn {
@@ -99,20 +104,28 @@ a:hover {
 	transition: var(--transition);
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus-visible{
 	background: var(--color-white);
 	color: var(--color-bg-from);
 	border-color: transparent;
 }
+
 
 .btn-primary {
 	background: var(--color-primary);
 	color: var(--color-bg-from);
 }
 
+.pre-title{
+	text-align: center;
+}
+
 img {
 	display: block;
 	width: 100%;
+	height: 100%;
+	object-position: top;
 	object-fit: cover;
 }
 
@@ -122,7 +135,7 @@ img {
 		margin: 0 auto;
 	}
 	section{
-		margin-top: 6rem;
+		padding-bottom: 6rem;
 	}
 }
 
@@ -132,6 +145,6 @@ img {
 		margin: 0 auto;
 	}
 	section > h2{
-		margin-bottom: 2rem;
+		padding-bottom: 2rem;
 	}
 }

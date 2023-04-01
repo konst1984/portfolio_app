@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  About,
   Contacts,
   Experience,
   Footer,
@@ -15,6 +16,7 @@ const App = () => {
     <>
       <Header />
       <Nav />
+      <About />
       <Experience />
       <Services />
       <Portfolio />
