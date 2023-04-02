@@ -1,24 +1,24 @@
 import React from "react";
-import s from "./About.module.css";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { RiFolderChartLine } from "react-icons/ri";
+import s from "./About.module.css";
 
 const Content = () => {
   return (
     <div className={s.content}>
       <div className={s.cards}>
-        <article className={s.cards__item}>
+        <article className={s.card}>
           <FaAward className={s.icon} />
           <h3>experience</h3>
           <small>3+ years working</small>
         </article>
-        <article className={s.cards__item}>
+        <article className={s.card}>
           <FiUsers className={s.icon} />
           <h3>clients</h3>
           <small>200+ worldwide</small>
         </article>
-        <article className={s.cards__item}>
+        <article className={s.card}>
           <RiFolderChartLine className={s.icon} />
           <h3>projects</h3>
           <small>80+ completed</small>

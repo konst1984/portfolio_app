@@ -34,13 +34,8 @@
 }
 .socials >a:hover,
 .socials >a:focus-visible{
-	border: 2px solid var(--color-white);
+	box-shadow: 0 0 5px 10px #ffffff82;
 	border-radius: 50%;
-}
-
-.socials >a:active{
-
-
 }
 
 .socials__icon{
@@ -107,7 +102,8 @@
 @media screen and (max-width: 480px){
 	.me__img-box{
 		width: 90%;
-		aspect-ratio: 1/1.5;
+		aspect-ratio: 1/1.8;
+		max-height: 500px;
 		border-radius: 12rem;
 	}
 }

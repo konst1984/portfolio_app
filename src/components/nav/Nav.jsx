@@ -4,18 +4,6 @@ import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
 import { RiServiceLine, RiContactsBookLine } from "react-icons/ri";
 
-const LinkNav = ({ href, icon, active, setActive }) => {
-  return (
-    <a
-      href={href}
-      className={active === href ? s.active : ""}
-      onClick={() => setActive(href)}
-    >
-      {icon}
-    </a>
-  );
-};
-
 const Nav = () => {
   const [active, setActive] = useState("#");
 
@@ -23,7 +11,7 @@ const Nav = () => {
     if (active === "#") {
       window.scrollBy(0, 0);
     }
-  }, [active]);
+  });
 
   return (
     <nav>
