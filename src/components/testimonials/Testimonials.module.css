@@ -1,0 +1,40 @@
+.testimonials {
+	width: 50%;
+	padding-bottom: 3rem;
+}
+
+.testimonial {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-grow: 1;
+	gap: 1rem;
+	padding: 2rem;
+	background: var(--color-primary-variant);
+	text-align: center;
+	border-radius: 2rem;
+	user-select: none;
+	cursor: pointer;
+}
+
+.avatar {
+	width: 4rem;
+	flex-shrink: 0;
+	border: 0.4rem solid var(--color-bg-to);
+	aspect-ratio: 1/1;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+
+@media screen and (max-width: 1024px) {
+	.testimonials{
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.testimonials{
+		width: var(--container-width-screen-sm);
+	}
+}

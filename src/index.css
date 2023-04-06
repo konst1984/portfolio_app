@@ -130,6 +130,14 @@ img {
 	object-fit: cover;
 }
 
+.swiper-pagination-bullet{
+	background-color: var(--color-greylight);
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: var(--color-primary);
+}
+
 @media screen and (max-width: 1024px){
 	.container {
 		width: var(--container-width-screen-md);

@@ -9,7 +9,12 @@ const Article = ({ img, github, demo, title }) => {
       </div>
       <h3>{title}</h3>
       <div className={s.portfolio__cta}>
-        <a href={github} className="btn" target="_blank">
+        <a
+          href={github}
+          className="btn"
+          target="_blank"
+          title="go to game page"
+        >
           GitHub
         </a>
         <a href={demo} className="btn btn-primary" target="_blank">
