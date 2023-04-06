@@ -1,11 +1,14 @@
 import React from "react";
 import s from "./Portfolio.module.css";
+import { IPortfolio } from "../types";
 
-const Article = ({ img, github, demo, title }) => {
+type ArticleProps = Omit<IPortfolio, "id">;
+
+const Article = ({ image, github, demo, title }: ArticleProps) => {
   return (
     <article className={s.portfolio__item}>
       <div className={s.portfolio__image}>
-        <img src={img} alt="" />
+        <img src={image} alt="" />
       </div>
       <h3>{title}</h3>
       <div className={s.portfolio__cta}>
@@ -14,10 +17,16 @@ const Article = ({ img, github, demo, title }) => {
           className="btn"
           target="_blank"
           title="go to game page"
+          rel="noreferrer"
         >
           GitHub
         </a>
-        <a href={demo} className="btn btn-primary" target="_blank">
+        <a
+          href={demo}
+          className="btn btn-primary"
+          target="_blank"
+          rel="noreferrer"
+        >
           Live Demo
         </a>
       </div>

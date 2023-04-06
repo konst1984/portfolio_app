@@ -7,13 +7,13 @@ import { TiSocialLinkedin } from "react-icons/ti";
 const Socials = () => {
   return (
     <div className={s.socials}>
-      <a href="https://linkedin.com" target="_blank">
+      <a href="https://linkedin.com" target="_blank" rel="noreferrer">
         <TiSocialLinkedin className={s.socials__icon} />
       </a>
-      <a href="https://github.com" target="_blank">
+      <a href="https://github.com" target="_blank" rel="noreferrer">
         <GrGithub className={s.socials__icon} />
       </a>
-      <a href="https://dribble.com" target="_blank">
+      <a href="https://dribble.com" target="_blank" rel="noreferrer">
         <RiBasketballLine className={s.socials__icon} />
       </a>
     </div>

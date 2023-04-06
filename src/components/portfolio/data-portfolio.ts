@@ -4,8 +4,9 @@ import IMG3 from "../../assets/portfolio3.jpg";
 import IMG4 from "../../assets/portfolio4.jpg";
 import IMG5 from "../../assets/portfolio5.jpg";
 import IMG6 from "../../assets/portfolio6.jpg";
+import { IPortfolio } from "../types";
 
-export const data = [
+export const data: IPortfolio[] = [
   {
     id: 1,
     image: IMG1,

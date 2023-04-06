@@ -10,8 +10,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import s from "./Testimonials.module.css";
+import { IClient } from "../types";
 
-const clients = [
+const clients: IClient[] = [
   {
     img: AVRT1,
     name: "Agnes Palmer",
@@ -51,8 +52,8 @@ const Testimonials = () => {
             <div className={s.avatar}>
               <img src={img} alt="avatar" />
             </div>
-            <h4 className={s.name}>{name}</h4>
-            <small className={s.review}>{text}</small>
+            <h4>{name}</h4>
+            <small>{text}</small>
           </SwiperSlide>
         ))}
       </Swiper>

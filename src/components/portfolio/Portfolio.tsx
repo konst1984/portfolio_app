@@ -5,7 +5,7 @@ import Article from "./Article";
 
 const Portfolio = () => {
   const renderArticle = data.map(({ id, image, title, github, demo }) => (
-    <Article key={id} img={image} title={title} github={github} demo={demo} />
+    <Article key={id} image={image} title={title} github={github} demo={demo} />
   ));
 
   return (

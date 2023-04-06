@@ -7,6 +7,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	height: auto;
 	flex-grow: 1;
 	gap: 1rem;
 	padding: 2rem;
@@ -15,6 +16,10 @@
 	border-radius: 2rem;
 	user-select: none;
 	cursor: pointer;
+}
+
+.swiper-wrapper{
+	flex-grow: 1;
 }
 
 .avatar {
