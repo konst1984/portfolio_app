@@ -62,7 +62,6 @@
 	aspect-ratio: 1/1;
 	border-radius: 50%;
 	overflow: hidden;
-	padding: 3rem 0 0;;
 }
 .me__img-box > img{
 	filter: drop-shadow(2px 4px 6px black);

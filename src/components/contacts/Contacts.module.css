@@ -1,0 +1,86 @@
+.contacts{
+	width: 80%;
+	display: grid;
+	margin: auto;
+	grid-template-columns: 30% 60%;
+	gap: 10%;
+}
+
+.options{
+	display: flex;
+	flex-direction: column;
+	gap:1.2rem;
+}
+
+.option{
+	background: var(--color-primary-variant);
+	padding: 1.2rem;
+	border-radius: 1.2rem;
+	text-align: center;
+	border: 1px solid transparent;
+	transition: var(--transition);
+}
+
+.option:hover{
+	background: transparent;
+	border-color: var(--color-primary-variant);
+}
+
+.h4{
+	text-transform: none;
+}
+
+.icon{
+	font-size: 2rem;
+	margin: 0.5rem
+}
+
+.send{
+	text-transform: capitalize;
+}
+
+.option > a{
+	margin-top: 0.7rem;
+	display: inline-block;
+	font-size: 1rem;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+
+input, textarea{
+	width: 100%;
+	padding: 1.5rem;
+	border-radius: 0.5rem;
+	font-family: 'Poppins', sans-serif;
+	background: transparent;
+	border: 2px solid var(--color-primary-variant);
+	resize: none;
+	font-size: 1rem;
+	color: var(--color-white);
+}
+
+::placeholder{
+	text-transform: capitalize;
+}
+
+@media screen and (max-width: 1024px){
+	.contacts{
+		grid-template-columns: 1fr;
+		gap:2rem;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.contacts{
+		width: var(--container-width-screen-sm);
+	}
+}
+
+@media screen and (max-width: 320px){
+
+}
+

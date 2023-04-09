@@ -9,7 +9,7 @@ const Experience = () => {
       <h2>my experience</h2>
       <div className={`container ${s.experience}`}>
         <div className={s.frontend}>
-          <h3>frontend development</h3>
+          <h3 className={s.h3}>frontend development</h3>
           <div className={s.content}>
             <article className={s.details}>
               <TbShieldCheckeredFilled className={s.details__icon} />
