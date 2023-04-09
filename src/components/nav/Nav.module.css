@@ -1,4 +1,4 @@
-nav {
+.nav {
 	position: fixed;
 	left: 50%;
 	width: max-content;
@@ -13,7 +13,7 @@ nav {
 	backdrop-filter: blur(15px);
 }
 
-nav a {
+.nav a {
 	background: transparent;
 	padding: 0.9rem;
 	border-radius: 50%;
@@ -21,24 +21,37 @@ nav a {
 	color: var(--color-greylight);
 	font-size: 1.1rem;
 }
+.nav a > svf {
+	fill: var(--color-greylight);
+}
 
-nav a:hover{
+.nav a:hover{
 	background: var(--color-white);
 }
 
-nav a:hover svg{
+.nav a:hover svg{
 	fill: var(--color-black);
 }
 
-nav a.active {
+.nav a.active {
 	background: var(--color-bg-from);
 	color: var(--color-white)
 }
 
-nav a:active{
+.nav a:active{
 	background: var(--color-bg-from);
 }
 
-nav a:active svg{
+.nav a:active svg{
 	fill: var(--color-white);
+}
+
+@media screen and (max-width: 480px){
+	.nav{
+		gap:0.2rem;
+	}
+	.nav a{
+		padding: 0.6rem;
+		font-size: 1.2rem;
+	}
 }

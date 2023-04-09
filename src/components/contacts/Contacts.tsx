@@ -1,6 +1,5 @@
 import React from "react";
 import { AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
-import { BsMessenger } from "react-icons/bs";
 import s from "./Contacts.module.css";
 
 const Contacts = () => {
@@ -15,18 +14,6 @@ const Contacts = () => {
             <h3>email</h3>
             <h4 className={s.h4}>doe@gmail.com</h4>
             <a href="mailto:unknown@gmail.com" target="_blank" rel="noopener">
-              <span className={s.send}>send</span> a message
-            </a>
-          </article>
-          <article className={s.option}>
-            <BsMessenger className={s.icon} />
-            <h3>messenger</h3>
-            <h4 className={s.h4}>unknown</h4>
-            <a
-              href="https://m.me/ernest.achiever"
-              target="_blank"
-              rel="noopener"
-            >
               <span className={s.send}>send</span> a message
             </a>
           </article>
