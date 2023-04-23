@@ -9,5 +9,5 @@ In the project directory, you can run:
 ### `npm start`
 
 
-Open [Demo](http://localhost:3000) to view it in your browser.
+Open [Demo](https://konst1984.github.io/portfolio_app) to view it in your browser.
 
