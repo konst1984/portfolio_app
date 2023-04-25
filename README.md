@@ -12,7 +12,7 @@ Open [Demo](https://konst1984.github.io/portfolio_app) to view it in your browse
 
 Used by the library:
 
-    -react-icons;
-    -swiper;
-    -typescript;
+    -react-icons,
+    -swiper,
+    -typescript.
 
